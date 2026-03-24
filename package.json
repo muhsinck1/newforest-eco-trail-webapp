@@ -1,0 +1,18 @@
+{
+  "name": "rrrrrrrrrr",
+  "version": "1.0.0",
+  "description": "Optimized project to reduce load.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "lighter-package": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

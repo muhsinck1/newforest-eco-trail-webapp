@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Forest Ecological Atlas</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" />
+  </noscript>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="loading">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Loading New Forest</div>
+  </div>
+
+  <!-- Layer loading progress bar -->
+  <div id="progress-bar">
+    <div id="progress-fill"></div>
+    <span id="progress-label">Loading layers…</span>
+  </div>
+
+  <!-- Map canvas -->
+  <div id="map"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo-mark">NF</div>
+    <div class="title-block">
+      <h1>New Forest Ecological Atlas</h1>
+      <p>3D Biodiversity &amp; Trail Explorer · National Park, UK</p>
+    </div>
+    <div class="header-actions">
+      <button id="btn-3d"    class="hbtn">3D</button>
+      <button id="btn-reset" class="hbtn">⌖ Reset</button>
+    </div>
+  </header>
+
+  <!-- Side panel -->
+  <div id="side-panel">
+
+    <!-- Collapse/expand tab -->
+    <div id="panel-tab" title="Collapse panel">
+      <svg width="10" height="14" viewBox="0 0 10 14" fill="none">
+        <path d="M7 2L3 7L7 12" stroke="#6dbe3c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Panel top area -->
+    <div id="panel-head">
+      <div class="panel-logo-row">
+        <div class="panel-logo-icon">🌲</div>
+        <div>
+          <div class="panel-logo-text">New Forest Atlas</div>
+          <div class="panel-subtitle">Biodiversity Explorer</div>
+        </div>
+      </div>
+
+      <!-- Live zoom indicator -->
+      <div id="zoom-indicator">
+        <span class="zoom-label">VIEW</span>
+        <span id="zoom-desc">Forest overview</span>
+        <span id="zoom-value">z12.0</span>
+      </div>
+    </div>
+
+    <!-- Scrollable layer controls -->
+    <div id="panel-body">
+      <!-- populated by map.js → buildSidePanel() -->
+    </div>
+
+  </div>
+
+  <!-- Stats bar (observation counts) -->
+  <div id="stats-strip">
+    <div class="stat-chip">
+      <div class="stat-dot" style="background:#4cde8f"></div>
+      <span id="stat-birds">—</span>
+      <span class="stat-label">Birds</span>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-dot" style="background:#c084fc"></div>
+      <span id="stat-fungi">—</span>
+      <span class="stat-label">Fungi</span>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-dot" style="background:#22d3ee"></div>
+      <span id="stat-plants">—</span>
+      <span class="stat-label">Plants</span>
+    </div>
+  </div>
+
+  <!-- Trail explorer panel (slides up on trail hover) -->
+  <div id="explorer-panel">
+    <div id="explorer-header">
+      <span id="explorer-title">🥾 Trail Explorer</span>
+    </div>
+    <div id="explorer-content"></div>
+  </div>
+
+  <!-- Zoom context hint (briefly visible on zoom change) -->
+  <div id="zoom-hint"></div>
+
+  <!-- Observation detail panel (slides in from right on point click) -->
+  <div id="info-panel">
+    <div id="info-panel-header">
+      <span id="info-panel-title">Observation Detail</span>
+      <button id="info-panel-close">✕</button>
+    </div>
+    <div id="info-panel-content"></div>
+  </div>
+
+  <!-- Hover tooltip -->
+  <div id="tooltip"></div>
+
+  <!-- Live coordinate bar -->
+  <div id="coords">—</div>
+
+  <script src="map.js"></script>
+</body>
+</html>
