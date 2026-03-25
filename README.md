@@ -1,7 +1,7 @@
 # Biodiversity Mapping & Eco-Trail Web App — New Forest
 🚀 **Live Demo:** https://work4estolondon-hash.github.io/newforest-eco-trail-webapp/
 
-<img src="assets/images/eco-trail-concept.peg" width="50%"/>
+<img src="assets/images/eco-trail-concept.peg" width="30%"/>
 
 ---
 
@@ -18,7 +18,7 @@ This project began as a response to that frustration — to unify environmental 
 ## From Observation to Idea
 
 <div align="center">
-  <img src="assets/images/illustration.png" width="700"/>
+  <img src="assets/images/illustration.png" width="400"/>
 </div>
 
 Instead of treating GIS as a backend tool, this project reimagines it as an interface for exploration.
@@ -38,7 +38,7 @@ exist together in one place.
 The project begins with spatial analysis in ArcGIS Pro and Python workflows.
 
 <div align="center">
-  <img src="assets/images/methodology-workflow.png" width="700"/>
+  <img src="assets/images/methodology-workflow.png" width="400"/>
 </div>
 
 ### Data Sources
@@ -69,7 +69,7 @@ This classifies areas from low to very high ecological value, transforming raw d
 ## Eco-Trail Suitability
 
 <div align="center">
-  <img src="assets/images/eco-trail-suitability-map.png" width="700"/>
+  <img src="assets/images/eco-trail-suitability-map.png" width="400"/>
 </div>
 
 By combining biodiversity and terrain, the system identifies routes that:
@@ -83,7 +83,7 @@ By combining biodiversity and terrain, the system identifies routes that:
 ## Interactive Web Application
 
 <div align="center">
-  <img src="assets/images/webapp-interface.png" width="800"/>
+  <img src="assets/images/webapp-interface.png" width="500"/>
 </div>
 
 The spatial model is translated into an interactive WebGIS platform.
