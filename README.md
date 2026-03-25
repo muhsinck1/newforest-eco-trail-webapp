@@ -1,5 +1,5 @@
 # Biodiversity Mapping & Eco-Trail Web App — New Forest
-🚀 **Live Demo:** https://muhsinck1-hash.github.io/newforest-eco-trail-webapp/
+🚀 **Live Demo:**  https://muhsinck1.github.io/newforest-eco-trail-webapp/
 
 <img src="assets/images/eco-trail-concept.peg" width="30%"/>
 
