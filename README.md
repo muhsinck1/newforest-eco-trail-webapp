@@ -18,7 +18,7 @@ This project began as a response to that frustration — to unify environmental 
 ## From Observation to Idea
 
 <div align="center">
-  <img src="assets/images/eco-trail-concept.png" width="700"/>
+  <img src="assets/images/illustration.png" width="700"/>
 </div>
 
 Instead of treating GIS as a backend tool, this project reimagines it as an interface for exploration.
